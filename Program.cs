@@ -17,6 +17,7 @@ namespace Tydzien4ZadanieDodatkoweNr4
             .Replace("ż", "z")
             .Replace("ź", "z")
             .Replace("ć", "c")
+            .Replace("ś", "s")
             .Replace("ń", "n");
 
             return value;
@@ -26,7 +27,7 @@ namespace Tydzien4ZadanieDodatkoweNr4
         {
             Console.WriteLine("Podaj zdanie zawierające polskie znaki : ");
             string value = Console.ReadLine();
-            Console.WriteLine(NoPolishSigns(value));
+            Console.WriteLine($"Zdanie  bez polskich znaków  : {NoPolishSigns(value)}");
 
         }
     }
